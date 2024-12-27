@@ -15,5 +15,14 @@ document.addEventListener('DOMContentLoaded', () => {
 			scale: 2,
 			opacity: 1,
 			duration: 1,
+		})
+		.to('.section-text-scrolling h2', {
+			transform: 'translateX(-150%)',
+			scrollTrigger: {
+				trigger: '.section-text-scrolling',
+				start: 'top 0%',
+				scrub: true,
+				pin: true,
+			},
 		});
 });
